@@ -48,7 +48,7 @@ function startCountDown() {
         var minutes = Math.floor((count % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((count % (1000 * 60)) / 1000);
 
-        if (distance > 0){
+        if (count > 0){
         document.getElementById("days").innerHTML = days;
         document.getElementById("hours").innerHTML= hours; 
         document.getElementById("minutes").innerHTML = minutes; 
