@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Let's Count It Down</h1>
+    <form id="input1">
+        <label for="userInput1">Enter Event:</label>
+        <br />
+        <input type="text" id="userInput" placeholder="What are we counting down?">
+        <br />
+        <br />
+        <label for "date">Enter Date:</label>
+        <br />
+        <input type="date" name="date" id="userEventDate">
+        <br />
+        <br />
+        <button id="start" onClick="startCountDown()">Start</button>
+    </form>
+    <h3 id="eventHeading"></h3>
+    <h3 id="eventDate"></h3>
+    <div id="clock">
+        <div>
+            <span id="days"></span>
+            <div class="type">Days</div>
+        </div>
+        <div>
+            <span id="hours"></span>
+            <div class="type">Hours</div>
+        </div>
+        <div>
+            <span id="minutes"></span>
+            <div class="type">Minutes</div>
+        </div>
+        <div>
+            <span id="seconds"></span>
+            <div class="type">Seconds</div>
+        </div>
+    </div>
+    <h2 id="expired"></h2>
+    <br />
+    <button id="refresh" onClick = location.reload()>Refesh</button>
+    <script src="main.js"></script>
+</body>
+</html>
